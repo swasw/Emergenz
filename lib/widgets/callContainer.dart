@@ -39,8 +39,8 @@ void showLoadingDialog(BuildContext context) {
       showLoadingDialog(context);
     }
   }
-Widget callContainer(){
+Widget callContainer(BuildContext context,String paths,String imagePath,String name){
   return Container(
-
+    child: Row(children: [Image.asset(imagePath),],),
   );
 }
