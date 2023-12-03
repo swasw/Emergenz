@@ -28,6 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  url_launcher: ^6.2.1
   flutter:
     sdk: flutter
 
@@ -57,7 +58,15 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-
+  assets: 
+    - assets/
+    - assets/images/ambulan.png
+    - assets/images/police.png
+    - assets/images/basarnas.png
+    - assets/images/jasamarga.png
+    - assets/images/pemadam.png
+    - assets/images/pertamina.png
+    - assets/images/default.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
