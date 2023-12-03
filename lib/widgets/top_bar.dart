@@ -1,7 +1,7 @@
 import 'package:emergenz/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:emergenz/guide_page.dart';
-import 'package:emergenz/phonebok_page.dart';
+import 'package:emergenz/callPage.dart';
 
 class TopBar extends StatefulWidget {
   Color guidecol = lightcolor;
@@ -63,7 +63,7 @@ class _TopBarState extends State<TopBar> {
             ),
             InkWell(
               onTap: () {
-                navigator2(PhoneBookPage(), context);
+                navigator2(CallPage(), context);
               },
               child: Container(
                 decoration: BoxDecoration(
