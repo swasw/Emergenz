@@ -65,6 +65,8 @@ flutter:
     - assets/images/basarnas.png
     - assets/images/jasamarga.png
     - assets/images/pemadam.png
+    - assets/images/default.png
+    - assets/images/umum.png
     - assets/images/pertamina.png
     - assets/images/default.png
     - assets/images/firstaid.png
