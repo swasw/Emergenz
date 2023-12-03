@@ -25,10 +25,10 @@ class _CallPage extends State<CallPage> {
             TopBar(guidecol: background1,pbhkcol: lightcolor),
             callContainer(context, "110", "assets/images/police.png", "Polisi"),
             callContainer(context, "119", "assets/images/ambulan.png", "Ambulan"),
-            callContainer(context, "113", "assets/images/pemadam.png", "Pemadam Kebakaran"),
-            callContainer(context, "112", "images/umum.png", "Umum"),
+            callContainer(context, "113", "assets/images/pemadam.png", "Damkar"),
+            callContainer(context, "112", "assets/images/umum.png", "Umum"),
             callContainer(context, "115", "assets/images/basarnas.png", "Basarnas"),
-            callContainer(context, "135", "images/pertamina.png", "Pertamina DS"),
+            callContainer(context, "135", "assets/images/pertamina.png", "Pertamina DS"),
             callContainer(context, "14080", "assets/images/jasamarga.png", "Jasamarga"),
             ],
         )

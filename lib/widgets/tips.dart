@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:emergenz/guide_page.dart';
 import 'callContainer.dart';
 import 'package:emergenz/callPage.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class TipsTrivia extends StatefulWidget {
   const TipsTrivia({super.key});
@@ -30,60 +31,80 @@ class _TipsTriviaState extends State<TipsTrivia> {
               ),
             ),
             SizedBox(height: 12,),
-            Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15), color: listcard),
-                  margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
-                  child: Column(
-                    children: [
-                      Image.asset('assets/images/island.png'),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        "Island Escape Mastery:",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500),
-                      ),
-                      Text(
-                        "Surviving on a Deserted Island",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500),
-                      ),
-                    ],
+            InkWell(
+              onTap: () async {
+                    String url = '/facts/how-to-survive-on-a-desert-island/';
+                    await launchUrl(Uri(
+                      scheme: "https",
+                      host: "www.americanoceans.org",
+                      path: url,
+                    ));
+                  },
+              child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15), color: listcard),
+                    margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+                    child: Column(
+                      children: [
+                        Image.asset('assets/images/island.png'),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Text(
+                          "Island Escape Mastery:",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        Text(
+                          "Surviving on a Deserted Island",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-            Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15), color: listcard),
-                  margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
-                  child: Column(
-                    children: [
-                      Image.asset('assets/images/warzone.png'),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        "Earthquake Essentials:",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500),
-                      ),
-                      Text(
-                        "Staying Safe in Shaky Situations",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500),
-                      ),
-                    ],
+            ),
+            InkWell(
+              onTap: () async {
+                    String url = '/en/topics/earthquakes';
+                    await launchUrl(Uri(
+                      scheme: "https",
+                      host: "www.paho.org",
+                      path: url,
+                    ));
+                  },
+              child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15), color: listcard),
+                    margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+                    child: Column(
+                      children: [
+                        Image.asset('assets/images/warzone.png'),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Text(
+                          "Earthquake Essentials:",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        Text(
+                          "Staying Safe in Shaky Situations",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
+            ),
           ],
         ),
       ),

@@ -26,7 +26,7 @@ class _TopBarState extends State<TopBar> {
       decoration: BoxDecoration(
         color: background1,
       ),
-      padding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
+      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
       child: Column(children: [
         Align(
           alignment: Alignment.centerLeft,
@@ -58,7 +58,7 @@ class _TopBarState extends State<TopBar> {
                   'Guide',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                      color: Colors.blue, fontWeight: FontWeight.bold),
+                      color: Colors.blue, fontWeight: FontWeight.bold,fontSize: 18),
                 ),
               ),
             ),
@@ -75,7 +75,7 @@ class _TopBarState extends State<TopBar> {
                   'Phonebook',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                      color: Colors.blue, fontWeight: FontWeight.bold),
+                      color: Colors.blue, fontWeight: FontWeight.bold,fontSize: 18),
                 ),
               ),
             ),
