@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../callPage.dart';
+import '../theme.dart';
 import 'package:url_launcher/url_launcher.dart';
 void showLoadingDialog(BuildContext context) {
     showDialog(
@@ -43,6 +44,7 @@ Widget callContainer(BuildContext context,String paths,String imagePath,String n
   return Container(
     height: 50,
     width: 80,
+    decoration: BoxDecoration(color:backgroundCard),
     margin: EdgeInsets.all(13.0),
     child: Row(children: [Image.asset(imagePath),],),
   );

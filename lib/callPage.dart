@@ -14,8 +14,8 @@ class _CallPage extends State<CallPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body:SafeArea(
-        child: SingleChildScrollView(
-          child :Column(
+        child: Container(decoration: BoxDecoration(color: background1),child:SingleChildScrollView(
+          child :Column(crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             TopBar(guidecol: background1,pbhkcol: lightcolor),
             callContainer(context, "110", "assets/images/police.png", "police"),
@@ -31,6 +31,9 @@ class _CallPage extends State<CallPage> {
         //     ],
         //   )  
         // ),
-      )));
+      )
+      )
+      )
+      );
   }
 }
