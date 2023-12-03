@@ -67,6 +67,11 @@ flutter:
     - assets/images/pemadam.png
     - assets/images/pertamina.png
     - assets/images/default.png
+    - assets/images/firstaid.png
+    - assets/images/orang_tapa.png
+    - assets/images/prior.png
+    - assets/images/island.png
+    - assets/images/warzone.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

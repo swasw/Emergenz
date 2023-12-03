@@ -13,6 +13,7 @@ class _CallPage extends State<CallPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: background,
       body:SafeArea(
         child: SingleChildScrollView(
           child :Column(
