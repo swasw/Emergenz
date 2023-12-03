@@ -14,10 +14,15 @@ class _CallPage extends State<CallPage> {
     return SafeArea(
       child:Scaffold(
         body: SingleChildScrollView(
-          child: Column(
-            
-          ),
+
+          child:Container(padding: EdgeInsets.all(15.0),
+            child:Column(mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              callContainer(context, "110", "assets/images/police.png", "police"),
+              callContainer(context, "110", "assets/images/police.png", "police")
+            ],
+          )  
         ),
-      ));
+      )));
   }
 }

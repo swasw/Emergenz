@@ -41,6 +41,9 @@ void showLoadingDialog(BuildContext context) {
   }
 Widget callContainer(BuildContext context,String paths,String imagePath,String name){
   return Container(
+    height: 50,
+    width: 80,
+    margin: EdgeInsets.all(13.0),
     child: Row(children: [Image.asset(imagePath),],),
   );
 }
