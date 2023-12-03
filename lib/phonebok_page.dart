@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'guide_page.dart';
 import 'theme.dart';
 import 'widgets/top_bar.dart';
 
-class GuidePage extends StatefulWidget {
-  const GuidePage({super.key});
+class PhoneBookPage extends StatefulWidget {
+  const PhoneBookPage({super.key});
 
   @override
-  State<GuidePage> createState() => _GuidePageState();
+  State<PhoneBookPage> createState() => _PhoneBookPageState();
 }
 
-class _GuidePageState extends State<GuidePage> {
+class _PhoneBookPageState extends State<PhoneBookPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +18,7 @@ class _GuidePageState extends State<GuidePage> {
         child: SafeArea(
             child: Column(
           children: [
-            TopBar(guidecol: lightcolor,pbhkcol: background1),],
+            TopBar(guidecol: background1,pbhkcol: lightcolor),],
         )),
       ),
     );
